@@ -109,6 +109,7 @@
     .header .logo-header .navbar-search .navbar-item .link-search, 
     .header .logo-header .navbar-search .navbar-item .link-cart {
         font-size: 14px;
+        display: flex;
         img {
             width: 2.4rem;
         }
@@ -116,7 +117,6 @@
 
     .header .logo-header .navbar-search .navbar-item .link-cart img,
     .header .logo-header .navbar-search .navbar-item .link-search img {
-        // width: 55% !important;
         width: 21px;
     }
 }
