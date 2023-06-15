@@ -1,0 +1,131 @@
+.register_header,
+.login_header{
+    width: 100%;
+    border-bottom: 0.5px solid gray;
+    margin-bottom: 2.7rem;
+};
+
+.page_title{
+    font-weight: 400;
+    font-size: 4rem;
+    line-height: 4.8rem;
+    padding: 6rem 0 4.2rem 0;
+}
+
+.label_form{
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    letter-spacing: 0.135px;
+    color: rgba(0, 0, 0, 0.6);
+    margin-left: 0.5rem;
+
+}
+
+.input_form{
+    width: 44.3rem;
+    height: 5.4rem;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    background: rgba(33, 33, 33, 0.08);
+    border-radius: 4px 4px 0px 0px;
+    &:focus {
+        box-shadow: none;
+    }
+}
+
+.validate{
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    color: #F50E0E;
+    margin-top: 5px;
+}
+
+.gender_choosen{
+    height: 10.4rem;
+    flex-wrap: wrap;
+    .lable_gender{
+        margin-right: 3rem;
+    };
+}
+.form-check-input{
+    position: unset;
+}
+
+.lable_radio{
+    display: flex;
+    flex-direction: column;
+    width: 5rem;
+    align-items: center;
+    cursor: pointer;
+    input{
+        opacity: 0;
+    };
+    .design {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        outline-offset: 3px;
+        outline: 3px solid #888888;
+        margin-bottom: 2rem;
+      };
+    input:checked~.design{
+        outline-color: #6200EE;
+        background: #6200EE;
+    };
+};
+
+.btn_submit_register,
+.btn_submit_login{
+    width: 12.1rem;
+    height: 4.8rem;
+    background-color: #6200EE;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    letter-spacing: 1.25px;
+    &:hover {
+        color: #fff !important;
+        background-color: #380480;
+    }
+}
+
+.btn_submit_register {
+    margin-bottom: 7.7rem;
+}
+
+.text-error {
+    color: red;
+    font-weight: 600;
+}
+
+
+//------------------RESPONSIVE-------------------
+@media screen and (max-width: 1024px) {
+    .register_body{
+        .input_form{
+            width: 100%;
+        }
+    }
+    .form-check{
+        padding-right: 0.5rem;
+    }
+};
+
+@media screen and (max-width: 601px) {
+    .gender_choosen {
+        flex-wrap: nowrap;
+    }
+    .gender_choosen .lable_gender {
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 415px) {
+    .form-group {
+        margin-bottom: 3rem;
+    }
+}

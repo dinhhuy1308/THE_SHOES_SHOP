@@ -1,0 +1,109 @@
+.card-product {
+    background: #f8f8f8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 33.4rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 4.9rem;
+
+    .fullHeart {
+        position: absolute;
+        width: 4.1rem;
+        height: 4.8rem;
+        line-height: 4.81rem;
+        top: 3rem;
+        right: 2rem;
+        font-size: 4rem;
+        cursor: pointer;
+    }
+
+    .card-product-img {
+        padding-top: 4.5rem;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+
+        img {
+            width: 21rem;
+            height: 16.8rem;
+        }
+    }
+
+    .card-product-content {
+        padding: 0 2.3rem;
+        height: 11.6rem;
+        h3 {
+            font-size: 2.3rem;
+            font-weight: 300;
+            line-height: 2.9rem;
+        }
+        p {
+            font-size: 2rem;
+            font-weight: 300;
+            line-height: 2.4rem;
+            color: #CBC9C9;
+        }
+    }
+
+    .card-product-interact {
+        display: flex;
+        align-items: end;
+
+        .card-product-btn {
+            width: 50%;
+            display: flex;
+            font-size: 2.4rem;
+            width: 17.5rem;
+            height: 6.4rem;
+            line-height: 2.9rem;
+            justify-content: center;
+            align-items: center;
+
+            &.buy-now {
+                background-color: #9de167;
+                transition: all 0.3s;
+                &:hover {
+                    background-color: #4f9f0e;
+                    font-weight: 700;
+                }
+            }
+
+            &.price {
+                font-weight: 600;
+                background: #DEDDDC;
+                border: none;
+            }
+        }
+    }
+}
+
+
+//-----------------------------RESPONSIVE-----------------------------------
+
+@media screen and (max-width: 601px) and (min-width: 500px) {
+    .card-product {
+        width: 26rem;
+    }
+
+    .card-product .card-product-content p {
+        font-size: 1.7rem;
+    }
+}
+
+@media screen and (max-width: 415px)  {
+    .card-product {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+
+
+
+
+
+
+
+

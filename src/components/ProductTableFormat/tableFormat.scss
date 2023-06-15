@@ -1,0 +1,102 @@
+.prod_table{
+    margin-top: 3.9rem;
+    padding-top: 2.6rem;
+    padding-left: 4.9rem;
+    table{
+        width: 100%;
+        margin-bottom: 10.3rem;
+        font-weight: 400;
+        font-size: 2rem;
+        line-height: 2.42rem;
+
+        white-space: nowrap;
+    }
+}
+
+.status_table{
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 1.6rem;
+    color: #7D0DB1;
+}
+.table-row{
+    height: 5.763rem;
+    background-color: #D9D9D9;
+}
+
+.td_id,
+.td_img{
+    text-align: center;
+}
+.td_name{
+    padding-left: 3.7rem;
+}
+.row_detail_prod{
+    .td_img{
+        width: 8.5rem;
+        height: 5.6rem;
+        img{
+            width: 100%;
+        }
+    }
+    
+    .td_quantity{
+        span{
+            background-color: #D9D9D9;
+            display: block;
+            width: 7.9rem;
+            height: 2.3rem;
+            text-align: center;
+        }
+    }
+}
+
+
+
+.table-wrapper {
+    overflow-x: auto;
+}
+
+
+//-------------RESPONSIVE-------------------------- 
+@media screen and (max-width: 1025px) {
+    .prod_table {
+        padding-left: 0;
+    }
+
+    .td_img {
+        padding-left: 4rem;
+    } 
+
+    .td-quantity, .td_price, .td-total {
+        padding-right: 4rem;
+    }
+
+    .pill_tab {
+        margin-bottom: 8rem;
+    }
+}
+
+@media screen and (max-width: 415px) {
+    .prod_table .status_table {
+        line-height: 2.2rem;
+    }
+
+    .prod_table .status_table {
+        font-size: 1.6rem;
+    }
+
+    .td_name {
+        padding-right: 3.7rem;
+    }
+
+    .tab-content .paginate_react ul {
+        margin-top: 4rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .pill_tab .nav-tabs .nav-link {
+        margin-left: -25px;
+    }
+}

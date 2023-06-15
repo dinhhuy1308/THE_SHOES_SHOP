@@ -1,0 +1,203 @@
+.search-text {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.135px;
+    color: rgba(0, 0, 0, 0.6);
+    margin-top: 6.8rem;
+    margin-left: 5rem;
+}
+
+.search-product {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 4.4rem;
+
+    .input-search {
+        padding: 16px 12px 14px 14px;
+        width: 44.3rem;
+        height: 5.4rem;
+        background: rgba(33, 33, 33, 0.08);
+        border: none;
+        outline: none;
+        margin-left: 4.4rem;
+        margin-right: 3.7rem;
+        font-size: 1.6rem;
+        color: #000;
+    }
+
+    .btn-search {
+        display: block;
+        background: #6200EE;
+        border: none;
+        box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.14), 0px 1px 10px rgba(0, 0, 0, 0.12), 0px 2px 4px rgba(0, 0, 0, 0.2);
+        border-radius: 5rem;
+        width: 12.1rem;
+        height: 4.8rem;
+        font-weight: 500;
+        font-size: 1.4rem;
+        line-height: 1.6rem;
+        letter-spacing: 1.25px;
+        text-transform: uppercase;
+        color: #fff;
+        transition: all 0.4s;
+
+        &:hover {
+            background: #3f0690;
+        }
+    }
+}
+
+h1 {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 7.4rem;
+    background: linear-gradient(180deg, #F21299 0%, #1B02B5 100%);
+    color: #fff;
+    font-size: 4rem;
+    line-height: 4.8rem;
+    padding: 1.4rem 2.9rem;
+}
+
+.search-result {
+    p {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 24px;
+        letter-spacing: 0.135px;
+        color: rgba(0, 0, 0, 0.6);
+        margin-left: 10.4rem;
+        margin-top: 2.7rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .input-filter {
+        margin-left: 9.8rem;
+        margin-bottom: 4.4rem;
+        height: 54px;
+    }
+}
+
+:where(.css-dev-only-do-not-override-dfjnss).ant-select-single:not(.ant-select-customize-input) .ant-select-selector {
+    height: 54px;
+        display: flex;
+        align-items: center;
+    
+    
+        padding: 16px 12px 14px 14px;
+        width: 44.3rem;
+        height: 5.4rem;
+        background: rgba(33, 33, 33, 0.08);
+        border: none;
+        outline: none;
+        border-radius: 0;    
+}
+
+.css-dev-only-do-not-override-w8mnev.ant-select-single.ant-select-show-arrow .ant-select-selection-item {
+    font-size: 16px;
+    font-weight: 400;
+
+    line-height: 2.4rem;
+    letter-spacing: 0.15px;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.css-dev-only-do-not-override-w8mnev.ant-select .ant-select-arrow {
+    margin-right: 20px;
+    margin-top: -5px;
+}
+
+.ant-select-item-option {
+    display: flex;
+    align-items: center;
+    height: 45px;
+    width: 100%;
+}
+
+.ant-empty {
+    margin-bottom: 10rem;
+}
+
+
+//-----------------RESPONSIVE-------------------------
+
+@media screen and (max-width: 768px) {
+    
+    .row-search {
+        margin: auto !important;
+    }
+
+    .search-result p,
+    .search-result .input-filter {
+        margin-left: 4.4rem;
+    }
+
+    
+}
+
+@media screen and (max-width: 601px) and (min-width: 500px) {
+    .search-product .btn-search {
+        margin-right: 3rem;
+    }
+}
+
+@media screen and (max-width: 415px) {
+    .search-text,
+    .search-result p,
+    .search-product .input-search,
+    .search-result .input-filter {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    .search-product {
+        flex-direction: column;
+
+        margin-right: 2rem;
+    }
+
+    .search-product .btn-search {
+        padding: 0 2rem;
+    }
+
+    :where(.css-dev-only-do-not-override-dfjnss).ant-select-single:not(.ant-select-customize-input) .ant-select-selector {
+        width: 250px;
+    } 
+
+    .input-filter {
+        width: 250px !important;
+    }
+
+
+    .search-product .input-search {
+        width: 25rem;
+        margin-left: -6.6rem;
+        margin-bottom: 2rem;
+
+    }
+
+    .search-product .btn-search {
+        margin-right: 18rem;
+        margin-left: -3rem;
+
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .search-product {
+        flex-direction: column;
+    }
+
+    .search-product .input-search {
+        width: 25rem;
+        margin-left: -3rem;
+        margin-bottom: 2rem;
+    }
+
+    .search-product .btn-search {
+        margin-left: 0;
+    }
+}
+

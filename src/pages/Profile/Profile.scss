@@ -1,0 +1,261 @@
+.profile_title{
+    width: 100%;
+    margin-top: 4.7rem;
+    height: 7.4rem;
+    p{
+        height: 100%;
+        width: 57.5rem;
+        background: linear-gradient(180deg, #F21299 0%, #1B02B5 100%);
+        padding: 1.3rem 3.4rem;
+        font-weight: 400;
+        font-size: 4rem;
+        line-height:4.8rem;
+        color: #fff;
+    }
+}
+
+
+.information_area{
+    display: flex;
+    margin-top: 2.6rem;
+    margin: 2.6rem 5.4rem 0;
+    padding-bottom: 1.3rem;
+    border-bottom: 0.5px solid gray;
+    .left_detail{
+        width: 22.5rem;
+        height: 22.5rem;
+        margin-left: 3.4rem;
+        margin-right: 6.8rem;
+        img{
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+        }
+    };
+    form{
+        width: 80%;
+        .right_detail{
+           width: 100%;
+           .col-right{
+            padding: 0;
+           }
+           .input_form{
+            width: 44.3rem;
+            height: 5.4rem;
+            font-weight: 400;
+            font-size: 1.6rem;
+            line-height: 2.4rem;
+            }
+            .gender_choosen{
+                height: 10.4rem;
+                flex-wrap: wrap;
+                .lable_gender{
+                    margin-right: 3rem;
+                };
+                .lable_radio{
+                    display: flex;
+                    flex-direction: column;
+                    width: 5rem;
+                    align-items: center;
+                    cursor: pointer;
+                    input{
+                        opacity: 0;
+                    };
+                    .design {
+                        width: 8px;
+                        height: 8px;
+                        border-radius: 50%;
+                        outline-offset: 3px;
+                        outline: 3px solid #888888;
+                        margin-bottom: 2rem;
+                      };
+                    input:checked~.design{
+                        outline-color: #6200EE;
+                        background: #6200EE;
+                    };
+                };
+            }
+            .validate{
+                font-weight: 400;
+                font-size: 1.2rem;
+                line-height: 1.6rem;
+                color: #F50E0E;
+                margin-top: 5px;
+            }
+        }
+    }
+
+}
+.radio-group{
+    display: flex;
+    .btn_submit_login{
+        width: 12.1rem;
+        height: 4.8rem;
+        background-color: #6200EE;
+        color: #fff;
+        font-weight: 500;
+        font-size: 1.4rem;
+        line-height: 1.6rem;
+        margin-left: 11.1rem;
+    }
+}
+
+.pill_tab{
+    padding: 1.9rem 5.4rem 0;
+    .nav-tabs{
+        border-bottom: unset;
+        .nav-link{
+            border: 1px solid #DEDDDC;
+            border-top: 0.2px solid transparent;
+            font-weight: 400;
+            font-size: 3.2rem;
+            line-height: 3.8rem;
+            color: #DD2AED;
+            padding: 1rem 4.5rem 1rem 3.2rem;
+        };
+        .nav-link-2{
+            color: #000000;
+            padding-right: 14.7rem;
+        }
+    }
+    .favorite_list{
+        margin-top: 3rem;
+        display: flex;
+        gap: 4.5rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+.action-avatar{
+    width: 100%;
+    display: flex;
+    margin: 1rem 0;
+    height: 3rem;
+    border-radius: 5px;
+    overflow: hidden;
+    .imgUrl{
+        border: unset;
+        padding: .5rem;
+        width: 80%;
+        background-color: #9ea5ad;
+        color: #DEDDDC;
+    }
+    button{
+        width: 20%;
+        border: unset;
+        font-weight: 400;
+        font-size: 2rem;
+        background-color: #6200EE;
+        color: #DFE3E8;
+        line-height: 4rem;
+    }
+}
+
+.tab-content .paginate_react ul .next a,
+.tab-content .paginate_react ul .previous a {
+    display: block;
+    cursor: pointer;
+    width: 3.2remx;
+    height: 3.2remx;
+}
+
+.td_name {
+    width: 715px;
+}
+
+
+
+// Pagination React SCSS
+
+.tab-content{
+    .paginate_react{
+        ul{
+            display: flex;
+            justify-content: flex-end;
+            gap: 0.8rem;
+            li{
+                display: block;
+                width: 3.2rem;
+                height: 3.2rem;
+                border-radius: 4px;
+                border: 1px solid #DFE3E8;
+                text-align: center;
+                line-height: 3.2rem;
+                font-weight: 700;
+                font-size: 1.4rem;
+            }
+            .previous,
+            .next{
+                background: #919EAB;
+                line-height: 3.2rem;
+                a{
+                    color: #c4cdd5;
+                }
+            }
+            .active-page{
+                background-color: #c4cdd5;
+            }
+        }
+    }
+}
+//-------------RESPONSIVE--------------------------
+
+@media screen and (max-width: 1025px) {
+    .information_area form .right_detail .input_form {
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .information_area {
+        margin: 2rem;
+    }
+
+    .information_area .left_detail {
+        margin-left: 0;
+        margin-right: 3rem
+    }
+
+    .information_area form .right_detail .gender_choosen {
+        flex-wrap: nowrap;
+    }
+}
+
+@media screen and (max-width: 601px) {
+    .information_area {
+        margin-left: 5.4rem;
+    }
+
+    .information_area .left_detail {
+        margin-right: 6rem;
+    }
+
+    .pill_tab .nav-tabs .nav-link {
+        width: 302px;
+    }
+
+    .pill_tab .nav-tabs .nav-link-2 {
+        padding-right: 11.7rem
+    }
+
+    .prod_table .status_table {
+        font-size: 1.8rem;
+    }
+
+    .row_detail_prod {
+        font-size: 1.7rem;
+    }
+}
+
+@media screen and (max-width: 415px) {
+    .information_area .left_detail {
+        display: none;
+    }
+
+    .td_price {
+        
+    }
+
+    
+}
+
