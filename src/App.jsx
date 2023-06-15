@@ -5,7 +5,7 @@ import HomeTemplate from './templates/HomeTemplate/HomeTemplate'
 
 
 const Home = lazy(() => import('./pages/Home/Home'))
-const Login = lazy(() => import('./pages/Login/login'))
+const Login = lazy(() => import('./pages/Login/Login'))
 const Register = lazy(() => import('./pages/Register/Register'))
 const Cart = lazy(() => import('./pages/Cart/Cart'))
 const Detail = lazy(() => import('./pages/Detail/Detail'))
