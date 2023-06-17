@@ -23,14 +23,6 @@ const ProductSlice = createSlice({
             state.productDetail = action.payload
         },
 
-        setHistoryOrder: (state, action) => {
-            state.orderHistoryList.push(action.payload)
-
-            localStorage.setItem('historyArr',
-                JSON.stringify([...state.orderHistoryList, { list: action.payload.list, date: action.payload.date }]))
-        },
-
-
         setListProductCart: (state, action) => {
             const indexById = state.listProductCart.findIndex((product) => product.id === action.payload.id);
             if (indexById === -1) {
@@ -58,6 +50,6 @@ const ProductSlice = createSlice({
     }
 });
 
-export const {setListProduct,setProducDetail,setListProductCart, setChangeQuantity,deleteProduct, setHistoryOrder} = ProductSlice.actions
+export const {setListProduct,setProducDetail,setListProductCart, setChangeQuantity,deleteProduct} = ProductSlice.actions
 
 export default ProductSlice.reducer
